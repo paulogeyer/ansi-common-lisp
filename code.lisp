@@ -243,5 +243,3 @@
       (incf acc))
     (reverse output)))
 
-(defun showdots (lst)
-  )
