@@ -243,3 +243,15 @@
       (incf acc))
     (reverse output)))
 
+(defun showdots (lst)
+  (if (not (null lst))
+      (progn
+	(princ "(")
+	(princ (car lst))
+	(if (cdr lst)
+	    (progn
+	      (princ " . ")
+	      (showdots (cdr lst)))
+	    (princ " . NIL"))))
+  (princ ")"))
+	       
